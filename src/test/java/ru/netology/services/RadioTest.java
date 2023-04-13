@@ -45,7 +45,7 @@ public class RadioTest {
 
     @Test
     public void shouldPrevFromMinStation() {
-        Radio radio = new Radio(10);
+        Radio radio = new Radio(9);
 
         radio.setCurrentStation(0);
         radio.prevStation();
@@ -120,7 +120,7 @@ public class RadioTest {
 
     @Test
     public void shouldSetStationStationMax() {
-        Radio radio = new Radio(10);
+        Radio radio = new Radio(9);
 
         radio.setCurrentStation(10);
         int expected = 0;
@@ -143,7 +143,7 @@ public class RadioTest {
 
     @Test
     public void shouldMoreMaxStation() {
-        Radio radio = new Radio(10);
+        Radio radio = new Radio(9);
 
         radio.setCurrentStation(9);
         radio.nextStation();
@@ -238,5 +238,4 @@ public class RadioTest {
 
         Assertions.assertEquals(expected, actual);
     }
-
 }
